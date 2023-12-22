@@ -15,3 +15,10 @@
    * Deve ser definida conforme o objetivo da rede: classificar ou regredir 
 * Epochs: número de passos do gradient descent
 * SOFTMAX: cada output ai é $e^{z_{i}} / ({e^{z_{1}} + ... + e^{z_{k}}})$
+* ADAM (Adaptative Moment Estimation): ajusta o learning rate conforme variabilidade da direção do ajuste a cada passo. Se dois ajustes são na mesma direção, é porque ela está boa, e o learning rate pode aumentar.
+
+### Tipos de camadas
+
+* Dense: todos os neurônios de uma camada se ligam a todos da camada seguinte
+* Convolucional: cada neurônio se liga apenas a parte da camada seguinte. Ex: em imagem, um neurônio por região, só se liga aos adjacentes.
+* 
