@@ -46,6 +46,7 @@ Plotar a learning curve (#iter x custo) para entender como está convergindo. Fi
    * Pode usar um subconjunto dos exemplos a cada passo.
 * Feature scaling: divide max, max-normalização (subtrai media, divide por max-min), z-score normalização
 * Overfitting (high variance) vs Underfitting (high bias)
+  * Bias: $J_{cv}$ e $J_{train}$ são altos. Overfit: $J_{cv}$ é alto e $J_{train}$ é baixo 
 * Regularização: o overfitting está ligado normalmente a valores muito grandes nos parâmetros. Por isso se usa um parâmetro extra de regularização na função custo, que é um fator multiplicado pela soma dos parâmetros (L1) ou quadrados dos parâmetros (L2)
 
 
