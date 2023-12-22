@@ -37,7 +37,7 @@ Plotar a learning curve (#iter x custo) para entender como está convergindo. Fi
    * $z(x) = wx + b$, onde $x$ pode ter múltiplas features.
 * É possível desenhar fronteiras não lineares: basta fazer uma z(x) não linear.
 * A função custo não é MSE porque não é convexa 
-* Função custo: $L(w,b) = (1/m) \Sigma_{i=1}^{m}\{y^{(i)} \log(f_{w,b}(x^{(i)})) + (1-y^{(i)}) \log(1-f_{w,b}(x^{(i)}))\}$
+* Função custo: $J(w,b) = (1/m) \Sigma_{i=1}^{m}\{y^{(i)} \log(f_{w,b}(x^{(i)})) + (1-y^{(i)}) \log(1-f_{w,b}(x^{(i)}))\}$
 
 # Conceitos gerais
 
