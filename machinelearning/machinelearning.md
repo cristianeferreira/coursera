@@ -69,6 +69,12 @@ Plotar a learning curve (#iter x custo) para entender como está convergindo. Fi
 * Recall = TP/(TP+FN) (percentual dos verdadeiros que foram classificados corretamente)
 * F1 = (2 * Prec * Rec) / (Prec * Rec) (média harmônica)
 
+# Aprendizado não supervisionado
+
+* K-means: agrupamentos por proximidade
+* Detecção de anomalias: gera densidade de probabilidade no espaço das amostras.
+* 
+
 # Redes neurais
 
 ### Arquitetura
