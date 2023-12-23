@@ -45,8 +45,26 @@ Plotar a learning curve (#iter x custo) para entender como está convergindo. Fi
    * Batch: cada passo usa todos os training examples
    * Pode usar um subconjunto dos exemplos a cada passo.
 * Feature scaling: divide max, max-normalização (subtrai media, divide por max-min), z-score normalização
-* Overfitting (high variance) vs Underfitting (high bias)
-  * Bias: $J_{cv}$ e $J_{train}$ são altos. Overfit: $J_{cv}$ é alto e $J_{train}$ é baixo 
 * Regularização: o overfitting está ligado normalmente a valores muito grandes nos parâmetros. Por isso se usa um parâmetro extra de regularização na função custo, que é um fator multiplicado pela soma dos parâmetros (L1) ou quadrados dos parâmetros (L2)
 
+* ### O que fazer se o modelo estiver com erro grande demais?
 
+* Mais exemplos
+* Mais atributos
+* Menos atributos
+* Criar novos atributos (p.ex. $x^2$)
+* Aumentar ou diminuir fator de regularização $\lambda$
+
+### Avaliando o seu modelo
+
+* Overfitting (high variance) vs Underfitting (high bias)
+  * Bias: $J_{cv}$ e $J_{train}$ são altos. Overfit: $J_{cv}$ é alto e $J_{train}$ é baixo 
+* Dividir os exemplos em treino, cross-validation e teste. O cross-validation escolhe o modelo. O teste gera a métrica do modelo escolhido.
+* Pode dividir o conjunto (treino+CV) em blocos, e treinar/CV para todas as combinações de amostras treino+CV. Escolhe a de menor erro médio no CV.
+* Parâmetro de regularização: variar i em $\lambda = 0,01 * 2^i$
+
+# Métricas
+
+* Precision = TP/(TP+FP) (percentual dos classificados como verdadeiros que são de fato verdadeiros)
+* Recall = TP/(TP+FN) (percentual dos verdadeiros que foram classificados corretamente)
+* F1 = (2 * Prec * Rec) / (Prec * Rec) (média harmônica)
